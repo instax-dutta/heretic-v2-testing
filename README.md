@@ -21,7 +21,7 @@ Run logs were not committed. They were large and mostly repeated what the journa
 
 EuroLLM gave the best result. Trial 154 cut refusals from 4/100 to 2/100 at KL 0.0083. Trial 174 had lower KL (0.0068) but 3/100 refusals, so trial 154 was the better tradeoff. Those numbers come from the run log; the 200-trial journal is not in this repo.
 
-SmolLM2 had two useful points. Trial 135 is the safe choice if you want KL close to zero. Trial 38 gives a larger refusal cut (4/100) at KL 0.0124. Trial 68 is close to trial 135 at 9/100 and KL 0.0011.
+SmolLM2 gave a few useful options. Trial 135 is the safe choice if you want KL close to zero. Trial 38 gives a larger refusal cut (4/100) at KL 0.0124. Trial 68 is close to trial 135 at 9/100 and KL 0.0011.
 
 LFM2.5-350M did not produce a low-KL option with 10 or fewer refusals. Trials with KL below 0.02 sat around 89/100 refusals. The best trial at 10 or fewer refusals was trial 113, with 7/100 and KL 0.0868.
 
